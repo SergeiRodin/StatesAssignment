@@ -1,0 +1,110 @@
+\documentclass[14pt,a4paper]{extreport}
+
+\input{packages}
+\input{styles}
+
+%\textwidth=16cm
+\headheight=0cm
+\headsep=0cm
+\textheight=24cm
+%\labelwidth=5mm
+%\leftmargini=0mm
+\topsep=0mm
+\partopsep=0mm
+\itemsep=0mm 
+%\addtolength{\leftmargini}{\labelsep}
+%\addtolength{\leftmargini}{\labelwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%My style
+%\documentclass[11pt]{article}
+%%\documentclass[twoside]{article}
+%
+%%\usepackage[cp1251]{inputenc}
+%\usepackage[utf8]{inputenc}
+%\usepackage[russian,english]{babel}
+%\usepackage[T2A]{fontenc}
+%%\usepackage{amssymb,latexsym,amsmath,amscd}
+%\usepackage{amsthm,amssymb,latexsym,amsmath,amscd}
+%\usepackage{enumerate}
+%\usepackage[dvips]{graphicx}
+%\usepackage{epstopdf} % to change .eps to .pdf
+%
+%
+%\theoremstyle{plain}
+%\newtheorem{theorem}{Теорема}
+%\newtheorem{lemma}{Лемма}
+%\newtheorem{corollary}{Следствие}
+%\newtheorem{proposition}{Предложение}
+%\newtheorem{assertion}{Утверждение}
+%%\newtheorem{proof}{Доказательство}
+%
+%\theoremstyle{definition}
+%\newtheorem{definition}{Определение}
+%\newtheorem{remark}{Замечание}
+%\newtheorem{example}{Пример}
+%
+%%\sloppy
+%%\newtheorem{theorem}{Теорема}
+%%\newtheorem{lemma}{Лемма}
+%%\newtheorem{corollary}{Следствие}
+%%\newtheorem{note}{Замечание}
+%%%\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+%%%\newtheorem{algorithm}[theorem]{Algorithm}
+%%%\newtheorem{axiom}[theorem]{Axiom}
+%%\newtheorem{definition}{Определение}
+%
+%%\newenvironment{proof}[1][Доказательство]{\textbf{#1:} }{\ \rule{0.5em}{0.5em}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\sloppy
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Title
+\input Title.tex
+%\include{Title.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\contentsname}{Содержание}
+%\addto\captionsenglish{
+%  \renewcommand{\contentsname}
+%    {Содержание}
+%}
+\tableofcontents
+\clearpage
+\renewcommand{\abstractname}{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\input Abstract.tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input Introduction.tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+В работе изучаются автоматы с входным алфавитом $A=E_2$ и выходным алфавитом $B=E_2$.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input IrredundantEncoding.tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input RedundantEncoding.tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input MaxProperty.tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input linearVSmax.tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input conclusion.tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input Bibliography.tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
+
+
